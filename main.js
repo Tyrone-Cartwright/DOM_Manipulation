@@ -11,7 +11,8 @@ const green = document.getElementById("green");
 const black = document.getElementById("black");
 
 mainHeading.textContent = "New DOM Layout";
-mainHeading.classList.add("bg-success");
+pageHead.classList.remove("bg-dark");
+pageHead.classList.add("bg-success");
 
 paraOne.textContent = " The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure.";
 
@@ -22,17 +23,20 @@ button.addEventListener('click', () => {
     
     newP.textContent = "The Document Object Model is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document.";
 
-    paraFour.appendChild(newP);
-    console.log(newP);
+    paraFour.appendChild(newP);    
 })
+    red.classList.remove("bg-white");
+    red.classList.add("bg-danger");    
 
-    red.classList.add("bg-danger");
-    console.log(red);
-    blue.classList.add("bg-primary");
-    console.log(blue);
-    yellow.classList.add("bg-warning");
-    console.log(yellow);
-    green.classList.add("bg-success");
-    console.log(green);
+    blue.classList.remove("bg-white");
+    blue.classList.add("bg-primary");    
+
+    yellow.classList.remove("bg-white");
+    yellow.classList.add("bg-warning");    
+
+    green.classList.remove("bg-white");
+    green.classList.add("bg-success");    
+
+    black.classList.remove("bg-white");
     black.classList.add("bg-dark");
-    console.log(black);
+ 
